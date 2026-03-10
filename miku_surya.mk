@@ -13,19 +13,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from surya device
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/clover/config/common_full_phone.mk)
+# Inherit some common stuff.
+$(call inherit-product, vendor/miku/build/product/miku_product.mk)
 
-# Clover assortment
-TARGET_INCLUDE_PIXEL_LAUNCHER := true
+# Miku-UI Stuff
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_QUICK_TAP := true
 USE_PIXEL_CHARGER := true
-CLOVER_BUILDTYPE := COMMUNITY
-CLOVER_MAINTAINER := NothingHere
+MIKU_GAPPS := true
+MIKU_MASTER := Kidz-BuildBot
 
-PRODUCT_NAME := clover_surya
+PRODUCT_NAME := miku_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := M2007J20CG

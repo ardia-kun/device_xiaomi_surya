@@ -5,5 +5,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/clover_surya.mk
+    $(LOCAL_DIR)/miku_surya.mk
 
